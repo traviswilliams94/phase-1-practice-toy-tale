@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //event listener for submit button
 document.querySelector('form').addEventListener('submit', handleSubmit);
 
-//event listener for like buttons
-// document.querySelectorAll(".like-btn").addEventListener('click', increaseLikes);
 
 //submit handling function
 
@@ -57,7 +55,7 @@ function renderToyCard(toyObj){
   <h2>${toyObj.name}</h2>
   <img src="${toyObj.image}"/>
   <p>${toyObj.likes}</p>
-  <button class="like-btn"> Like </button>`
+  <button class="like-btn" id="[toy_id]">Like ❤️ </button>`
 
   //event listener for like buttons
   card.querySelector('.like-btn').addEventListener('click', () => {
